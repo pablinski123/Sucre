@@ -1,0 +1,123 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #caf5f8;
+  color: #333;
+}
+
+header {
+  background-color: #06131b;
+  color: rgb(235, 90, 90);
+  padding: 30px 20px;
+  text-align: center;
+}
+
+header h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+   transform: scale(1.02);
+}
+
+.hero {
+  background: url('https://via.placeholder.com/1200x400') no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  background-color: #df1010;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+/* HABITACIONES */
+.habitaciones {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.habitaciones-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  width: 300px;
+  padding: 15px;
+  text-align: left;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+footer {
+  background-color: #005f73;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+/* Aplicando pagina responsiva*/
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero {
+    padding: 60px 20px;
+  }
+
+  .hero h2 {
+    font-size: 1.8rem;
+  }
+
+  .habitaciones-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
