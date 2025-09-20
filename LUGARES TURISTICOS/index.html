@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lugares Turísticos de Sucre</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #caf5f8;
+        }
+
+        header {
+            background-color: #06131b;
+            color: rgb(235, 90, 90);
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .destinos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            text-align: center;
+        }
+
+        .destino {
+            background-color: rgb(193, 194, 240);
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.2s;
+            text-align: center;
+            
+        }
+
+        .destino:hover {
+            transform: scale(1.02);
+        }
+
+        .destino img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .destino h3 {
+            margin: 15px;
+            font-size: 1.3em;
+        }
+
+        .destino p {
+            margin: 0 15px 15px;
+            font-size: 0.95em;
+            color: #555;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Destinos Turísticos Imperdibles</h1>
+        <p>Explora los lugares más asombrosos de Sucre</p>
+    </header>
+
+    <div class="container">
+        <section class="destinos">
+            <div class="destino">
+                <img src="Plaza 25 de Mayo.jpg">
+                <h3>Plaza 25 Mayo</h3>
+                <p> <strong> Ubicacion: </strong> Se encuentra en el casco viejo de Sucre, Bolivia y es el centro de la ciudad</p>
+
+                <p> Alrededor de la plaza se encuentra: la Casa de la Libertad, la Catedral Metropolitana y la Gobernacion</p>
+                <p> Alberga monumentos a los libertadores de Bolivia: Simón Bolívar, Antonio José de Sucre y Bernardo de Monteagudo</p>
+            </div>
+
+            <div class="destino">
+                <img src="Casa de la libertad.jpg">
+
+                <h3>Casa de la libertad</h3>
+                <p><strong> Ubicacion: </strong> Se encuentra en la plaza 25 de Mayo, en el ntro de la ciudad de Sucre</p>
+
+                <p> Es el Museo de historia más importante de Bolivia donde se proclamó la independencia del Alto Perú. </p>
+                <p> Primer Monumento Histórico de Bolivia, donde se firmó el Acta de Independencia de Bolivia en 1825. 
+                <p> Destaca por su portón de cedro nativo, clavos de bronce y grandes aldabones, así como el Salón de la Independencia con coro hispano-indígena.</p>
+            </div>
+
+            <div class="destino">
+                <img src="Convento San Felipe Neri.jpg">
+                <h3>Convento de San Felipe Neri</h3>
+                <p><strong> Ubicacion: </strong> Se encuentra a una cuadra de la plaza 25 de Mayo, en la calle Nicolas Ortiz</p>
+                
+                <p>  El convento alberga un museo que resguarda arte sacro y piezas coloniales</p>
+                <p>  En la cripta se encuentran sepultados: Ramón García León de Pizarro y fray Benito María Moxó.</p>
+                <p>  La terraza de ladrillo vidriado ofrece una vista panorámica de la ciudad, con techos de las casas coloniales, balcones de madera esculpida.</p>
+            </div>
+
+            <div class="destino">
+                <img src="Mirador la Recoleta.jpg">
+                <h3>Mirador de la Recoleta</h3>
+                <p> <strong> Ubicacion: </strong> Se encuentra en la parte sur de Sucre, en la calle Jose Maria Dalence</p>
+
+                <p>  La Recoleta es una iglesia y convento colonial construido en 1600,</p>
+                <p>  El Mirador ofrece vistas de la ciudad, el reloj de sol, la fuente La Peregrina, y el Monasterio de La Recoleta, que ahora funciona como museo.</p>
+                <p>  La Recoleta es un lugar de espiritualidad</p>
+            </div>
+
+            <div class="destino">
+                <img src="Parque Simon Bolivar.jpg">
+                <h3>Parque Simon Bolivar</h3>
+                <p><strong>  Ubicacion: </strong> Se encuentra en la parte Sur de la plaza 25 de Mayo, en el Kilometro 7 Av Between Venezuela and Pilinco Street </p>
+                <p> Tiene un diseño francés del siglo XVII fue modificado a mediados del siglo XVIII.</p> 
+                <p> Cuenta con una fuente de aguas danzantes y una réplica del Arco del Triunfo de París.</p>
+                <p> Es un sitio para actividades recreativas, paseos, clases de zumba, y disfrute de la naturaleza.</p>
+            </div>
+        </section>
+    </div>
+        <hr>    
+    <footer>
+        <p>Autores: Pablo Rejas y Gabriel Souza, estudiantes de Sistemas Informáticos del Instituto CCA.</p>
+    </footer>
+</body>
+</html>
+
